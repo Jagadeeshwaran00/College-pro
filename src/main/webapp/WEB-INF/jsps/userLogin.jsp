@@ -77,17 +77,20 @@
                     <br>
                      <label>User Id</label>
                      <br><br>
-                    <input type="text" id="name" name="AdminId" placeholder="Enter Id">
+                    <input type="text" id="name" name="id" placeholder="Enter Id">
                     <br>
                     <br>
                     <label>Password</label>
                     <br><br>
-                    <input type="password" id="name" name="Password" placeholder="Enter Password">
+                    <input type="password" id="name" name="pass" placeholder="Enter Password">
                     <br>
                     <br>
                     <input type="submit" id="submit" name="submit" value="Login"> </td>
                     <br>
-                    <a href="#">Forgot Password?</a>
+                    <a href="authuntication">Forgot Password?</a>
+                    <br>
+                    <br>
+                    <a href="registration">New User?</a>
                 </form> 
             </div>
         </div>     

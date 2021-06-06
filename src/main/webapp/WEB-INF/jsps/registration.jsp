@@ -79,13 +79,13 @@
       <div class="register">
          <h2>Register Here</h2>
          <form id="register" method="GET">
-            <label> collage Registration number</label>
+            <label> college Registration number</label>
             <br>
-            <input type="text" id="name" name="reg no" placeholder="Enter the registration number">
+            <input type="text" id="name" name="id" placeholder="Enter the registration number">
             <br>
             <label>User name</label>
             <br>
-            <input type="text" id="name" name="uname" placeholder="Enter the user name">
+            <input type="text" id="name" name="name" placeholder="Enter the user name">
             <br>
             <label> password</label>
             <br>
