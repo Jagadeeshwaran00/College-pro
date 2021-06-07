@@ -78,25 +78,25 @@
     <div class="main">
       <div class="register">
          <h2>Register Here</h2>
-         <form id="register" method="GET">
-            <label> college Registration number</label>
+         <form  id="register" action="userLogin" method="post">
+            <label> User Id</label>
             <br>
-            <input type="text" id="name" name="id" placeholder="Enter the registration number">
+            <input type="text" id="name" name="id" placeholder="Enter the user id">
             <br>
-            <label>User name</label>
+            <label>User Name</label>
             <br>
             <input type="text" id="name" name="name" placeholder="Enter the user name">
             <br>
-            <label> password</label>
+            <label> Password</label>
             <br>
             <input type="password" id="name" name="pass" placeholder="Enter your password">
             <br>
-            <label> conform password</label>
+            <label> Confirm Password</label>
             <br>
-            <input type="text"  id="name" name="cpass" placeholder="Enter password for conformation">
+            <input type="password"  id="name" name="cpass" placeholder="Enter password for conformation">
             <br>
             <br>
-            <input type="button" id="submit" value="Submit">
+            <input type="button"  value="Submit">
          </form>
         </div>
     </div>
