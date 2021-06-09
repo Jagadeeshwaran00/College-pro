@@ -73,12 +73,23 @@
         }
     </style>
 
+<script type="text/javascript">
+    function Validate() {
+        var password = document.getElementById("a").value;
+        var confirmPassword = document.getElementById("b").value;
+        if (password != confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
+        }
+        return "/userLogin";
+    }
+</script>
 </head>
 <body>
     <div class="main">
       <div class="register">
          <h2>Register Here</h2>
-         <form  id="register" action="userLogin" method="post">
+         <form  id="register" action="/userLogin" method="post">
             <label> User Id</label>
             <br>
             <input type="text" id="name" name="id" placeholder="Enter the user id">
@@ -89,14 +100,14 @@
             <br>
             <label> Password</label>
             <br>
-            <input type="password" id="name" name="pass" placeholder="Enter your password">
+            <input type="password" id="a" name="pass" placeholder="Enter your password">
             <br>
             <label> Confirm Password</label>
             <br>
-            <input type="password"  id="name" name="cpass" placeholder="Enter password for conformation">
+            <input type="password"  id="b" name="cpass" placeholder="Enter password for conformation">
             <br>
             <br>
-            <input type="button"  value="Submit">
+            <input type="submit"  value="Submit" >
          </form>
         </div>
     </div>

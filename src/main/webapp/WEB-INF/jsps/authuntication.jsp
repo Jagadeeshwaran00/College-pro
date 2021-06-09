@@ -39,8 +39,9 @@ div.authuntication{
     <body style=" margin: 0; padding: 0; display:grid; place-content:center; min-height:100vh; ">
         <div class="authuntication">
         <h1  style="text-align: center; color: white;"><b>User Authentication</b></h1>
-        <form style="margin: 40px;">
-            <label><td>Enter your User Id</td> </label><br><br>
+        
+        <form style="margin: 40px;" action="changePassword">
+            <label>Enter your User Id</label><br><br>
             <input type="text" id="userid" name="userid"  placeholder="User Id"><br><br>
             <label for="squestion">Choose your security question:</label><br><br>
             <select name="squestion" id="squestion" >
@@ -51,9 +52,8 @@ div.authuntication{
             <input type="text" id="userid" placeholder="Answer here">
             <br>
             <br>
-            <a href="changePassword">
-            <input type="submit" name="submit" id="submit"  onclick="changePassword" style="text-decoration-thickness:20px;">
-            </a>
+            <input type="submit"  id="submit"  style="text-decoration-thickness:20px;">
+     
         </form>
     </div>
     </body>
