@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.college.election.entities.User;
 import com.college.election.repos.ElectionRepository;
@@ -16,8 +17,6 @@ public class UserController {
 	@Autowired
 	ElectionService service;
 	
-	@Autowired
-	private ElectionRepository repository; 
 	
 	@RequestMapping("/userLogin")
 	public String login()
@@ -42,10 +41,10 @@ public class UserController {
 	}
 	
 
-	@RequestMapping(value="userLogin",method = RequestMethod.POST)
+	@RequestMapping(value="/userLogin",method = RequestMethod.POST)
 	public String Register(@ModelAttribute("user") User user)
 	{
-		repository.save(user);
+		service.registerUser(user);
 		return "userLogin"; 
 	}
 }
