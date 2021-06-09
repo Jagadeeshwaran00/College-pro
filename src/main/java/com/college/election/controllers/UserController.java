@@ -18,33 +18,33 @@ public class UserController {
 	ElectionService service;
 	
 	
-	@RequestMapping("/userLogin")
+	@RequestMapping("/UserLogin")
 	public String login()
 	{
-		return "userLogin";
+		return "UserLogin";
 	}
 
-	@RequestMapping("/registration")
+	@RequestMapping("/Registration")
 	public String Register() {
-		return "registration"; 
+		return "Registration"; 
 	}
-	@RequestMapping("/authuntication")
+	@RequestMapping("/Authentication")
 	public String TwoStepVerify()
 	{
-		return "authuntication";
+		return "Authentication";
 	}
 	
-	@RequestMapping("/changePassword")
+	@RequestMapping("/ChangePassword")
 	public String SetPassword()
 	{
-		return "changePassword";
+		return "ChangePassword";
 	}
 	
 
-	@RequestMapping(value="/userLogin",method = RequestMethod.POST)
+	@RequestMapping(value="/UserLogin",method = RequestMethod.POST)
 	public String Register(@ModelAttribute("user") User user)
 	{
 		service.registerUser(user);
-		return "userLogin"; 
+		return "UserLogin"; 
 	}
 }
