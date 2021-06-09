@@ -26,7 +26,7 @@
 				<option value="1">Which was your favorite location?</option>
 				<option value="2">What was your childhood nick name?</option>
 				<option value="3">Who was your favorite celebrity?</option>
-			</select><br> <input type="text" id="userid" placeholder="Answer here">
+			</select><br> <br><input type="text" id="userid" placeholder="Answer here">
 			<br> <br> <input type="submit" id="submit"
 				style="text-decoration-thickness: 20px;">
 

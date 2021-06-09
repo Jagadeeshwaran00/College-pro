@@ -2,17 +2,23 @@ package com.college.election.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class User{
+public class User {
 
 	@Id
 	private int id;
 
-	private String pass;
+	private String register_no;
+
+	private String password;
+
+	private String email;
+
+	private String squestions;
+
+	private String sanswers;
 
 	private String name;
 
@@ -29,12 +35,44 @@ public class User{
 		this.id = id;
 	}
 
-	public String getPass() {
-		return pass;
+	public String getRegister_no() {
+		return register_no;
 	}
 
-	public void setPass(String pass) {
-		this.pass = pass;
+	public void setRegister_no(String register_no) {
+		this.register_no = register_no;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getSquestions() {
+		return squestions;
+	}
+
+	public void setSquestions(String squestions) {
+		this.squestions = squestions;
+	}
+
+	public String getSanswers() {
+		return sanswers;
+	}
+
+	public void setSanswers(String sanswers) {
+		this.sanswers = sanswers;
 	}
 
 	public String getName() {
@@ -63,8 +101,9 @@ public class User{
 
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", pass=" + pass + ", name=" + name + ", department=" + department + ", gender="
-				+ gender + "]";
+		return "User [id=" + id + ", register_no=" + register_no + ", password=" + password + ", email=" + email
+				+ ", squestions=" + squestions + ", sanswers=" + sanswers + ", name=" + name + ", department="
+				+ department + ", gender=" + gender + "]";
 	}
 
 }
