@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration</title>
      <link rel="stylesheet" href="<c:url value="/resources/css/Registration.css" />">
 
 <script type="text/javascript">
@@ -28,21 +28,48 @@
       <div class="register">
          <h2>Register Here</h2>
          <form  id="register" action="/UserLogin" method="post">
-            <label> User Id</label>
-            <br>
-            <input type="text" id="name" name="id" placeholder="Enter the user id">
-            <br>
+            
             <label>User Name</label>
             <br>
-            <input type="text" id="name" name="name" placeholder="Enter the user name">
+            <input type="text" id="name" name="name" placeholder="Enter your user name">
+            <br>
+            <label> Registration Number</label>
+            <br>
+            <input type="text" id="register_no" name="register_no" placeholder="Enter your register no">
+            <br>
+            <label> Email Id</label>
+            <br>
+            <input type="text" id="email" name="email" placeholder="Enter your email id">
+            <br>
+           <label for="gender">Choose your security question:</label><br> 
+			<select name="gender" id="gender" >
+				<option value="Male">Male</option>
+				<option value="Female">Female</option>
+				<option value="Others">Others</option>
+				</select>
+            <br>
+            <label>Department</label>
+            <br>
+            <input type="text" id="department" name="depa" placeholder="Enter your department">
             <br>
             <label> Password</label>
             <br>
-            <input type="password" id="a" name="pass" placeholder="Enter your password">
+            <input type="password" id="a" name="password" placeholder="Enter your password">
             <br>
             <label> Confirm Password</label>
             <br>
-            <input type="password"  id="b" name="cpass" placeholder="Enter password for conformation">
+            <input type="password"  id="b" name="cpass" placeholder="Enter password for confirmation">
+            <br>
+		<label for="squestion">Choose your security question:</label><br> 
+			<select name="squestions" id="squestion">
+				<option value="Which was your favorite location?">Which was your favorite location?</option>
+				<option value="What was your childhood nick name?">What was your childhood nick name?</option>
+				<option value="Who was your favorite celebrity?">Who was your favorite celebrity?</option>
+				</select>
+            <br>
+            <label> Answer</label>
+            <br>
+            <input type="text" id="sanswers" name="sanswers" placeholder="Enter your answer">
             <br>
             <br>
             <input type="submit"  value="Submit" >
