@@ -7,13 +7,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.college.election.entities.User;
-import com.college.election.service.ElectionService;
+import com.college.election.repos.ElectionRepository;
 
 @Controller
 public class UserController {
 	
 	@Autowired
-	ElectionService service;
+	private ElectionRepository repository;
 	
 	
 	@RequestMapping("/UserLogin")
@@ -42,7 +42,7 @@ public class UserController {
 	@RequestMapping(value="/UserLogin",method = RequestMethod.POST)
 	public String Register(@ModelAttribute("user") User user)
 	{
-		service.registerUser(user);
+		repository.save(user);
 		return "UserLogin"; 
 	}
 }

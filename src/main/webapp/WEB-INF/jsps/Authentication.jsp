@@ -7,8 +7,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>User Authentication</title>
-<link rel="stylesheet"
-	href="<c:url value="/resources/css/Authentication.css" />">
+<link rel="stylesheet" href="<c:url value="/resources/css/Authentication.css" />">
 </head>
 
 <body
